@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    margin: 0;
+}
+
+/* Navbar Styles */
+nav {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px; /* Reduced padding for compact navbar height */
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #ccc;
+    z-index: 999;
+}
+
+nav img {
+    height: 50px; /* Increased logo height slightly */
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    font-size: 20px;
+    padding: 2px 5px; /* Reduced padding for smaller navbar height */
+}
+
+nav .nav-links a:hover {
+    color: #ddd;
+}
+
+/* Main Content Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Head Title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Order Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+table td img {
+    width: 100px; /* Set image size */
+    height: auto;
+}
+
+/* Grand Total Styling */
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Logo Link */
+#logo-link {
+    padding: 20px 10px;
+    margin-left: 10px;
+}
+
+.nav-links .btn {
+    margin-left: 10px;
+    padding: 10px 15px; /* Reduced padding for compact button */
+    font-size: 16px;
+}
+
+.btn {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 5px 15px; /* Reduced padding for compact height */
+    border-radius: 20px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkred;
+}

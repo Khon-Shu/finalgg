@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    /* background: url(img/blank2.jpg); */
+    background-color: maroon;
+
+}
+.container{
+     background-size: cover;
+     background-image: url(../img/12345.png);
+    background-repeat: no-repeat; 
+    height: 85vh;
+    background-color: rgba(0, 0, 0 , 0.5);
+    backdrop-filter: blur(5px);
+
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    background: rgba(0, 0, 0 , 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+.navdiv {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+.link{
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+.textsec{
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.textsec span{
+    letter-spacing: 5px;
+    color: aliceblue;
+}
+
+.textsec h1{
+    font-style: 3.5em;
+    color: whitesmoke;
+}
+
+.textsec a{
+    text-decoration: none;
+    background-color: white;
+    color:black;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 5px;
+}
+.textsec .btn:hover{
+    background-color: dimgrey;
+}
+
+
+
+.head>h1 {
+    text-align: center;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: none;
+    background-position: center;
+    /* margin-top: 22px; */
+    padding: 33px;
+}
+
+.collectionGrid{
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: maroon;
+}
+.homecard{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.homecard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px;
+    object-fit: cover;
+}
+.homecard img:hover{
+    transform:scale(1.05);
+    transition: transform 500ms ease;
+}
+.collectionText{
+    /* outline: 2px solid red; */
+    margin-bottom: 60px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+.collectionText h3{
+    color: whitesmoke;
+    padding: 0px;
+}
+.homecard a{
+    color: black;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+
+/* Styling for User link in the Navbar */
+.nav-links .profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
+}
+
+.nav-links .profile .text {
+    margin-left: 5px;
+}
+
+.nav-links .profile:hover {
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+}
+.user i {
+    font-size: 24px; /* Increase font size for larger icon */
+    color: white; /* Ensure icon color matches other navbar elements */
+}
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.nav-buttons .btn {
+    margin-left: 10px; /* Optional: Adds additional space specifically for the Log Out button */
+}
+.footer {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.footertext {
+    text-align: center;
+}
+
+.footertext > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footertext > h4 {
+    margin-bottom: 10px;
+}
+
+.footertext > p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footertext a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footertext a:hover {
+    color: #e74c3c;
+}

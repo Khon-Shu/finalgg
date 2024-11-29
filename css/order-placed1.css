@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General body styling */
+body {
+    background-color: maroon;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(../img/shop.png); */
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+.navdiv {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+/* Buttons in navbar */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons .btn {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons .btn:hover {
+    background-color: darkred;
+}
+
+/* Page title styling */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Order container styling */
+.order-container {
+    width: 90%;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: white;
+}
+
+/* Order details heading */
+.order-details h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: lightgreen;
+}
+
+/* Order details information */
+.order-details p {
+    margin: 5px 0;
+    color: lightgrey;
+}
+
+/* Table styling for order items */
+.order-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.order-container table th,
+.order-container table td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+.order-container table th {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.order-container table td img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Cancel button styling */
+.cancel-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: darkred;
+}
+
+/* Horizontal line styling between orders */
+hr {
+    border: none;
+    height: 1px;
+    background-color: grey;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-container table th,
+    .order-container table td {
+        font-size: 14px;
+    }
+
+    .cancel-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-container {
+        padding: 15px;
+    }
+
+    .order-container table th,
+    .order-container table td {
+        font-size: 12px;
+    }
+
+    .cancel-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 80px; /* Adjust the height for a larger logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the logo and text, if applicable */
+}
+td{
+    color: white;
+}

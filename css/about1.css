@@ -1,0 +1,289 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/shop.png);
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* About Section Styling */
+.about {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.knowus {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about-list {
+    list-style: circle;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: #34495e;
+    font-size: 1rem;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Reduced padding for a smaller size */
+    border-radius: 4px; /* Slightly smaller border radius for a clean look */
+    font-size: 1rem; /* Reduced font size for a compact style */
+    text-decoration: none; /* Removes underline */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Aligns button neatly */
+    margin: 15px auto; /* Adjusted margin for proportion */
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.03); /* Slight scaling for a sweet hover effect */
+}
+
+
+/* Image Section */
+.image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image > img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.who {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    flex-shrink: 0;
+    width: 35%;
+}
+
+.who > h1 {
+    margin-bottom: 15px;
+}
+
+.who > p {
+    font-size: 1.1rem;
+}
+
+/* Contact Us Section */
+.contact-us {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Map */
+.map {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: white;
+  
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.footertext {
+    text-align: center;
+}
+
+.footertext > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footertext > h4 {
+    margin-bottom: 10px;
+}
+
+.footertext > p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footertext a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footertext a:hover {
+    color: #e74c3c;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+.navdiv {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Reduced padding for a smaller navbar height */
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    gap: 15px; /* Maintains padding between items */
+}
+
+.user i {
+    color: white; /* Change the color of the user icon to white */
+    font-size: 20px; /* Optional: Adjust icon size */
+    transition: color 0.3s ease; /* Optional: Transition effect on hover */
+}
+
+.user i:hover {
+    color: lightgray; /* Optional: Change color on hover for better visibility */
+}
+
+.btn {
+    color: white; /* Button text color */
+    background-color: red;
+    text-decoration: none;
+    padding: 8px 15px; /* Button padding */
+    border-radius: 20px;
+    font-size: 14px; /* Button font size */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+}
+
+.btn:hover {
+    background-color: darkred; /* Darker color on hover */
+}

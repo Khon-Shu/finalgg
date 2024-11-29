@@ -1,0 +1,145 @@
+body {
+     background-image: url('../../img/admin.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Maintain column layout */
+   
+}
+
+.container {
+    width: 85%; /* Adjust width to ensure the container is centered without too much gap */
+    height: auto; /* Adjust height to fit the content dynamically */
+    display: flex;
+    justify-content: space-between; /* Distribute image boxes evenly */
+    gap: 10px; /* Slight space between image boxes */
+    position: relative;
+    margin-bottom: 50px; /* Space between the container and the greeting */
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%; /* Set a smaller width for each image box */
+    text-align: center;
+}
+
+.image-box img {
+    width: 125%; /* Adjust image width to fit within the box */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.image-box img:hover {
+    transform: scale(1.5); /* Scale the image when hovered */
+    z-index: 4; /* Bring the hovered image to the front */
+}
+
+.image-box p {
+    margin-top: 10px; /* Space between image and text */
+    color: white;
+    font-size: 18px; /* Increased font size */
+    text-align: center;
+}
+
+.logout-container {
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.logout-container button {
+    padding: 10px 20px; /* Adjust padding for a better button size */
+    background-color: red; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.logout-container button:hover {
+    background-color: darkred; /* Darker color on hover */
+}
+
+.logo-container {
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left; adjust as needed */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.logo {
+    width: 85px; /* Set your desired width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.greet {
+    position: absolute; /* Absolute positioning to place it at the bottom right */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    text-align: right; /* Align text to the right */
+    color: white; /* Change the text color to white for visibility */
+    font-size: 50px; /* Increased font size */
+    font-family: "Poppins", sans-serif; /* Ensure consistency with other text */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Maintain a column layout */
+        align-items: center; /* Center items */
+    }
+
+    /* Position logo and logout button above the image boxes */
+    .logo-container {
+        position: relative; /* Change to relative positioning */
+        margin-bottom: 10px; /* Space below the logo */
+        width: 100%; /* Full width */
+        display: flex;
+        justify-content: center; /* Center logo */
+    }
+
+    .logout-container {
+        position: relative; /* Change to relative positioning */
+        margin-bottom: 10px; /* Space below the logout button */
+        width: 100%; /* Full width */
+        display: flex;
+        justify-content: flex-end; /* Align logout button to the right */
+    }
+
+    .container {
+        flex-direction: row; /* Maintain a row layout for image boxes */
+        width: 100%; /* Full width for the container */
+        justify-content: center; /* Center content horizontally */
+        margin-top: 20px; /* Add space above the container */
+    }
+
+    .image-box {
+        width: 45%; /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Space between rows of image boxes */
+    }
+
+    .image-box img {
+        width: 100%; /* Adjust image width to fit within the box */
+    }
+
+    .greet {
+        font-size: 36px; /* Decrease font size for smaller screens */
+        text-align: left; /* Align text to the left */
+    }
+}

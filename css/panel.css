@@ -1,0 +1,263 @@
+/* Body styling */
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-menu li a:hover {
+    background-color: #575757;
+}
+
+/* Logout button styling */
+.logout {
+    background-color: #e74c3c;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: background 0.3s;
+    margin-right: 25px; /* Adjusted to shift the button slightly left */
+}
+
+.logout:hover {
+    background-color: #c0392b;
+}
+
+/* Content styling */
+#content {
+    padding-top: 80px; /* Adjusted to match navbar height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Head-title styling */
+.head-title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    width: 100%;
+}
+
+.head-title h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+/* Wrapper styling for the form */
+.wrapper {
+    width: 400px; /* Set a fixed width or use a percentage for responsiveness */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Space between form and other content */
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+/* Styles for tablets and smaller screens */
+/* Responsive adjustments */
+/* Styles for tablets and smaller screens */
+/* Responsive adjustments */
+/* Styles for tablets and smaller screens */
+/* Styles for tablets and smaller screens */
+@media (max-width: 768px) {
+    /* Navigation menu layout */
+    .nav-menu {
+        display: flex; /* Maintain flex layout */
+        flex-direction: row; /* Keep items aligned horizontally */
+        justify-content: space-around; /* Space items evenly */
+        position: absolute;
+        background-color: #111; /* Match navbar background */
+        top: 60px; /* Below the navbar */
+        left: 0;
+        width: 100%; /* Full width for the nav menu */
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-menu li {
+        margin: 0; /* Remove vertical margin */
+        padding: 10px; /* Add padding for better spacing */
+        list-style: none; /* Remove default list styling */
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        width: 90%; /* Responsive width */
+        margin: 10px auto; /* Center the wrapper */
+    }
+
+    .head-title h1 {
+        font-size: 24px; /* Decrease font size */
+    }
+
+    #content {
+        padding-top: 60px; /* Adjust for navbar */
+    }
+}
+
+/* Styles for mobile phones (480px and smaller) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        padding: 10px;
+        height: auto; /* Allow dynamic height */
+    }
+
+    .nav-menu {
+        justify-content: space-between; /* Evenly space out items */
+    }
+
+    .boxes {
+        grid-template-columns: 1fr; /* Stack boxes vertically */
+    }
+
+    .box {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .logout-button {
+        align-self: flex-end; /* Keep logout button visible */
+    }
+}
+
+/* Box styling for dashboard content */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 50px; /* Increased padding to make the boxes bigger */
+    text-align: center;
+    transition: background 0.3s;
+    font-size: 1.2em; /* Optional: Increase font size if needed */
+}
+
+.box:hover {
+    background: #f0f0f0;
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.box p {
+    margin-top: 10px;
+}
+
+.box a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 40px; /* Adjust height as needed */
+    width: auto;
+}
